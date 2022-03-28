@@ -98,7 +98,7 @@
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <AdditionalDependencies>glfw3.lib;glew32s.lib;opengl32.lib;user32.lib;gdi32.lib;shell32.lib;</AdditionalDependencies>
-      <AdditionalLibraryDirectories>$(ProjectDir)dependicies\GLFW\lib-vc2022;$(ProjectDir)dependicies\GLEW\lib\Release\Win32</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(ProjectDir)dependicies\GLFW\lib-vc2022;$(ProjectDir)dependicies\GLEW\lib;</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -117,7 +117,7 @@
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <AdditionalDependencies>glfw3.lib;glew32s.lib;opengl32.lib;user32.lib;gdi32.lib;shell32.lib;</AdditionalDependencies>
-      <AdditionalLibraryDirectories>$(ProjectDir)dependicies\GLFW\lib-vc2022;$(ProjectDir)dependicies\GLEW\lib\Release\Win32</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(ProjectDir)dependicies\GLFW\lib-vc2022;$(ProjectDir)dependicies\GLEW\lib;</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -622,6 +622,10 @@
     <None Include="src\vendor\glm\glm\gtx\vector_angle.inl" />
     <None Include="src\vendor\glm\glm\gtx\vector_query.inl" />
     <None Include="src\vendor\glm\glm\gtx\wrap.inl" />
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="dependicies\GLEW\lib\glew32.lib" />
+    <Library Include="dependicies\GLEW\lib\glew32s.lib" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

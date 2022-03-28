@@ -1403,4 +1403,8 @@
       <Filter>Header Files</Filter>
     </None>
   </ItemGroup>
+  <ItemGroup>
+    <Library Include="dependicies\GLEW\lib\glew32s.lib" />
+    <Library Include="dependicies\GLEW\lib\glew32.lib" />
+  </ItemGroup>
 </Project>
